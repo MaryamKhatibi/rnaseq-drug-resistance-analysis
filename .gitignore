@@ -1,0 +1,44 @@
+# Raw sequencing data
+data/raw/
+data/fastq/
+data/sra/
+
+# Alignment files
+data/bam/
+results/mapping/*.bam
+results/mapping/*.sam
+results/mapping/*.bai
+
+# Reference genome and indexes
+data/reference/
+*.ht2
+*.ht2l
+*.fa
+*.fasta
+*.fna
+*.gtf
+*.gff
+*.gz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Large analysis outputs
+results/qc/
+results/mapping/
+results/counts/
+results/differential_expression/
+
+# R temporary files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+
+# OS files
+.DS_Store
+Thumbs.db
