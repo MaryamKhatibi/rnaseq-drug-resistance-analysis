@@ -32,6 +32,7 @@ with open(input_file, newline="", encoding="utf-8") as infile:
             "geo_accession",
             "sra_run",
             "cell_line",
+            "cell_background",
             "resistance",
             "replicate"
         ])
@@ -54,12 +55,20 @@ with open(input_file, newline="", encoding="utf-8") as infile:
 
             if cell == "BxPC-3" and resistance == "Sensitive":
                 sample_id = f"BxPC3_S{replicate}"
+                cell_background = "BxPC-3"
+
             elif cell == "BxPC-3-GR" and resistance == "Resistant":
                 sample_id = f"BxPC3_GR{replicate}"
+                cell_background = "BxPC-3"
+
             elif cell == "CFPAC-1" and resistance == "Sensitive":
                 sample_id = f"CFPAC1_S{replicate}"
+                cell_background = "CFPAC-1"
+
             elif cell == "CFPAC-1-GR" and resistance == "Resistant":
                 sample_id = f"CFPAC1_GR{replicate}"
+                cell_background = "CFPAC-1"
+
             else:
                 raise ValueError(
                     f"Unexpected sample: {run}\t{cell}\t{resistance}"
@@ -70,6 +79,7 @@ with open(input_file, newline="", encoding="utf-8") as infile:
                 geo,
                 run,
                 cell,
+                cell_background,
                 resistance,
                 replicate
             ])
