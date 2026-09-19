@@ -42,3 +42,11 @@ results/differential_expression/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Temporary and local files
+.RDataTmp*
+genePredToBed
+scripts/align_hisat2.sh.save
+
+# Trimmed sequencing data
+results/trimming/

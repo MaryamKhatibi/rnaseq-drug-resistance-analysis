@@ -1,0 +1,56 @@
+"ENTREZID","SYMBOL","GENENAME","pathway","PathwayCount"
+"506","ATP5F1B","ATP synthase F1 subunit beta","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"513","ATP5F1D","ATP synthase F1 subunit delta","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"514","ATP5F1E","ATP synthase F1 subunit epsilon","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"516","ATP5MC1","ATP synthase membrane subunit c locus 1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"517","ATP5MC2","ATP synthase membrane subunit c locus 2","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"518","ATP5MC3","ATP synthase membrane subunit c locus 3","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"521","ATP5ME","ATP synthase membrane subunit e","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"9551","ATP5MF","ATP synthase membrane subunit f","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"10632","ATP5MG","ATP synthase membrane subunit g","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"10476","ATP5PD","ATP synthase peripheral stalk subunit d","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"522","ATP5PF","ATP synthase peripheral stalk subunit F6","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"537","ATP6AP1","ATPase H+ transporting accessory protein 1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"8992","ATP6V0E1","ATPase H+ transporting V0 subunit e1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"529","ATP6V1E1","ATPase H+ transporting V1 subunit E1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"9296","ATP6V1F","ATPase H+ transporting V1 subunit F","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1352","COX10","cytochrome c oxidase assembly factor heme A:farnesyltransferase COX10","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4697","COXFA4","cytochrome c oxidase associated subunit FA4","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1327","COX4I1","cytochrome c oxidase subunit 4I1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"9377","COX5A","cytochrome c oxidase subunit 5A","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1329","COX5B","cytochrome c oxidase subunit 5B","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1337","COX6A1","cytochrome c oxidase subunit 6A1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1340","COX6B1","cytochrome c oxidase subunit 6B1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"9167","COX7A2L","cytochrome c oxidase subunit 7A2 like","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1349","COX7B","cytochrome c oxidase subunit 7B","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"1351","COX8A","cytochrome c oxidase subunit 8A","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4720","NDUFS2","NADH:ubiquinone oxidoreductase core subunit S2","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4722","NDUFS3","NADH:ubiquinone oxidoreductase core subunit S3","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"374291","NDUFS7","NADH:ubiquinone oxidoreductase core subunit S7","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4728","NDUFS8","NADH:ubiquinone oxidoreductase core subunit S8","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4723","NDUFV1","NADH:ubiquinone oxidoreductase core subunit V1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4694","NDUFA1","NADH:ubiquinone oxidoreductase subunit A1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4695","NDUFA2","NADH:ubiquinone oxidoreductase subunit A2","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4696","NDUFA3","NADH:ubiquinone oxidoreductase subunit A3","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4700","NDUFA6","NADH:ubiquinone oxidoreductase subunit A6","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4702","NDUFA8","NADH:ubiquinone oxidoreductase subunit A8","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4706","NDUFAB1","NADH:ubiquinone oxidoreductase subunit AB1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4708","NDUFB2","NADH:ubiquinone oxidoreductase subunit B2","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4709","NDUFB3","NADH:ubiquinone oxidoreductase subunit B3","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4710","NDUFB4","NADH:ubiquinone oxidoreductase subunit B4","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4712","NDUFB6","NADH:ubiquinone oxidoreductase subunit B6","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4713","NDUFB7","NADH:ubiquinone oxidoreductase subunit B7","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4717","NDUFC1","NADH:ubiquinone oxidoreductase subunit C1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4724","NDUFS4","NADH:ubiquinone oxidoreductase subunit S4","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"4726","NDUFS6","NADH:ubiquinone oxidoreductase subunit S6","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"6389","SDHA","succinate dehydrogenase complex flavoprotein subunit A","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"6390","SDHB","succinate dehydrogenase complex iron sulfur subunit B","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"6391","SDHC","succinate dehydrogenase complex subunit C","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"6832","SUPV3L1","Suv3 like RNA helicase","Hallmark_MYC_Targets_V2; Hallmark_Oxidative_Phosphorylation",2
+"27089","UQCRQ","ubiquinol-cytochrome c reductase complex III subunit VII","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"7384","UQCRC1","ubiquinol-cytochrome c reductase core protein 1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"7385","UQCRC2","ubiquinol-cytochrome c reductase core protein 2","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"7388","UQCRH","ubiquinol-cytochrome c reductase hinge protein","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"29796","UQCR10","ubiquinol-cytochrome c reductase, complex III subunit X","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"10975","UQCR11","ubiquinol-cytochrome c reductase, complex III subunit XI","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
+"7386","UQCRFS1","ubiquinol-cytochrome c reductase, Rieske iron-sulfur polypeptide 1","Hallmark_Oxidative_Phosphorylation; KEGG_Oxidative_Phosphorylation",2
