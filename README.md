@@ -35,7 +35,7 @@ The original study established gemcitabine-resistant derivatives of BxPC-3 and C
 ## Analysis workflow
 
 ```text
-Public SRA data
+Public ENA FASTQ data
       |
       v
 FastQC / MultiQC
@@ -80,7 +80,7 @@ Pathway analysis
 
 ### Quality control and preprocessing
 
-Raw paired-end reads were evaluated with FastQC and summarized with MultiQC. Reads were adapter-trimmed with Trimmomatic and the paired surviving reads were used for downstream alignment.
+Raw paired-end FASTQ files were downloaded directly from the European Nucleotide Archive (ENA) using the corresponding SRA run accessions. The FASTQ files were then evaluated with FastQC and summarized with MultiQC. Reads were adapter-trimmed with Trimmomatic and the paired surviving reads were used for downstream alignment.
 
 ### Alignment
 
@@ -200,9 +200,7 @@ rnaseq-drug-resistance-analysis/
 │
 ├── data/
 │   ├── metadata/
-│   ├── raw/
 │   ├── fastq/
-│   ├── sra/
 │   └── reference/
 │
 ├── results/
