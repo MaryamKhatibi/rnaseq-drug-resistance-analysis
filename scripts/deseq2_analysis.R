@@ -30,6 +30,7 @@ library(clusterProfiler)
 library(enrichplot)
 library(pathview)
 library(msigdbr)
+library(stringr)
 
 # ============================================================
 # 2. Define project paths
@@ -82,6 +83,22 @@ dir.create(
   recursive = TRUE,
   showWarnings = FALSE
 )
+
+# ============================================================
+# Helper function for wrapping long plot labels
+# ============================================================
+
+wrap_labels <- function(x, width = 35) {
+  sapply(
+    x,
+    function(label) {
+      paste(
+        strwrap(label, width = width),
+        collapse = "\n"
+      )
+    }
+  )
+}
 
 # ============================================================
 # 3. Import count matrix and sample metadata
@@ -822,11 +839,25 @@ cat(
 
 if (nrow(gsea_GO_df) > 0) {
 
+
   gsea_GO_dotplot <- dotplot(
     gsea_GO,
     showCategory = 20
   ) +
-    ggtitle("GSEA: GO Biological Process")
+    scale_y_discrete(
+      labels = function(x) wrap_labels(
+        x,
+        width = 38
+      )
+    ) +
+    ggtitle("GSEA: GO Biological Process") +
+    theme(
+      axis.text.y = element_text(
+        size = 10,
+        lineheight = 0.9
+      )
+    )
+
 
   ggsave(
     filename = file.path(
@@ -835,7 +866,7 @@ if (nrow(gsea_GO_df) > 0) {
     ),
     plot = gsea_GO_dotplot,
     width = 10,
-    height = 8,
+    height = 11,
     dpi = 300
   )
 }
@@ -876,11 +907,25 @@ cat(
 
 if (nrow(gsea_KEGG_df) > 0) {
 
+
   gsea_KEGG_dotplot <- dotplot(
     gsea_KEGG,
     showCategory = 20
   ) +
-    ggtitle("GSEA: KEGG pathways")
+    scale_y_discrete(
+      labels = function(x) wrap_labels(
+        x,
+        width = 38
+      )
+    ) +
+    ggtitle("GSEA: KEGG pathways") +
+    theme(
+      axis.text.y = element_text(
+        size = 10,
+        lineheight = 0.9
+      )
+    )
+
 
   ggsave(
     filename = file.path(
@@ -889,7 +934,7 @@ if (nrow(gsea_KEGG_df) > 0) {
     ),
     plot = gsea_KEGG_dotplot,
     width = 10,
-    height = 8,
+    height = 10,
     dpi = 300
   )
 }
@@ -931,13 +976,29 @@ cat(
   "\n"
 )
 
+
 if (nrow(gsea_GO_simplified_df) > 0) {
 
   gsea_GO_simplified_plot <- dotplot(
     gsea_GO_simplified,
     showCategory = 20
   ) +
-    ggtitle("GSEA: Simplified GO Biological Processes")
+    scale_y_discrete(
+      labels = function(x) wrap_labels(
+        x,
+        width = 38
+      )
+    ) +
+    ggtitle(
+      "GSEA: Simplified GO Biological Processes"
+    ) +
+    theme(
+      axis.text.y = element_text(
+        size = 10,
+        lineheight = 0.9
+      )
+    )
+
 
   ggsave(
     filename = file.path(
@@ -946,7 +1007,7 @@ if (nrow(gsea_GO_simplified_df) > 0) {
     ),
     plot = gsea_GO_simplified_plot,
     width = 10,
-    height = 8,
+    height = 11,
     dpi = 300
   )
 }
@@ -1153,11 +1214,33 @@ cat(
 
 if (nrow(gsea_Hallmark_df) > 0) {
 
+  # Create a plotting copy with concise Hallmark labels
+
+  gsea_Hallmark_dotplot <- gsea_Hallmark
+
+  gsea_Hallmark_dotplot@result$Description <- sub(
+    "^HALLMARK_",
+    "",
+    gsea_Hallmark_dotplot@result$ID
+  )
+
+  gsea_Hallmark_dotplot@result$Description <- gsub(
+    "_",
+    " ",
+    gsea_Hallmark_dotplot@result$Description
+  )
+
   hallmark_dotplot <- dotplot(
-    gsea_Hallmark,
+    gsea_Hallmark_dotplot,
     showCategory = 20
   ) +
-    ggtitle("GSEA: Hallmark gene sets")
+    ggtitle("GSEA: Hallmark gene sets") +
+    theme(
+      axis.text.y = element_text(
+        size = 10
+      )
+    )
+
 
   ggsave(
     filename = file.path(
@@ -1166,7 +1249,7 @@ if (nrow(gsea_Hallmark_df) > 0) {
     ),
     plot = hallmark_dotplot,
     width = 10,
-    height = 8,
+    height = 9,
     dpi = 300
   )
 }
